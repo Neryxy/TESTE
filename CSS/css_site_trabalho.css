@@ -362,6 +362,7 @@ button:hover {
 }
 
 /* Responsivo */
+/* Responsivo */
 @media (max-width: 768px) {
 
   /* Header image menor */
@@ -391,29 +392,42 @@ button:hover {
     height: 100px;
   }
 
-  /* Menu mobile */
+  /* Ajustes para o nav e menu hamburguer */
+  header nav {
+    position: relative;
+    z-index: 1100; /* garantir que fique acima de outros elementos */
+  }
+
   .nav-list {
-    display: none; /* esconde o menu por padrão */
+    display: none; /* esconder menu por padrão */
     flex-direction: column;
     background-color: #fdfdfd;
-    position: absolute;
+    position: absolute; /* para ficar sobreposto */
     top: 60px;
     right: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px;
     width: 150px;
-    z-index: 1050;
+    z-index: 1100; /* garantir prioridade na sobreposição */
   }
 
   .nav-list.ativo {
-    display: flex; /* mostra o menu quando ativado */
+    display: flex; /* mostrar menu ao ativar */
   }
 
   .menu-hamburguer {
-    display: block; /* mostra o botão hamburguer no mobile */
+    display: block; /* mostrar botão hamburguer no mobile */
   }
 }
+
+/* Desktop - esconde o botão hamburguer */
+@media (min-width: 769px) {
+  .menu-hamburguer {
+    display: none;
+  }
+}
+
 
 /* Desktop - esconde o botão hamburguer */
 @media (min-width: 769px) {
