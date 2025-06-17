@@ -132,8 +132,8 @@ section h3 {
 .sobre {
   border: 5px solid #464646;
   border-radius: 10px;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   align-items: center;
   text-align: center;
   background-color: #F3E8FD;
@@ -388,7 +388,7 @@ button:hover {
     background-color: #fdfdfd;
     position: absolute;
     right: 20px;
-    bottom: 0px;
+    bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px;
