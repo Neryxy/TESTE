@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Patas da Alegria</title>
+    <link rel="stylesheet" href="./CSS/css_site_trabalho.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./IMAGENS/Logos/LogoSite.jfif" alt="Logo do Petshop">
+            <span></span>
+            <h1>Bem vindos ao mundo da felicidade!</h1>
+        </div>
+
+        <button class="menu-hamburguer" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#carrossel">Início</a></li>
+                <li><a href="#banhos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrossel">
+        <img name="slide" id="slide" src="./IMAGENS/Carrosel/Carrosel_1.jpg" alt="">
+        <div class="botao_slide">
+            <input type="radio" id="v1" name="m" onclick="Muda(1)"/>
+            <input type="radio" id="v2" name="m" onclick="Muda(2)"/>
+            <input type="radio" id="v3" name="m" onclick="Muda(3)"/>
+        </div>
+    </section>
+
+    <div class="sobre">
+        <h1>Sobre Nós</h1>
+        <h4> 50 anos de amor e cuidado com seu pet!
+
+Desde 1974, o Patas da Alegria é mais do que um pet shop, somos uma família apaixonada por animais. Ao longo de cinco décadas, crescemos ao lado de tutores e seus melhores amigos, oferecendo carinho, atenção e serviços de qualidade.
+
+Aqui, cada banho, tosa e atendimento é feito com respeito à individualidade do seu pet. Nossa equipe é formada por profissionais experientes, que unem conhecimento e amor em tudo o que fazem.
+
+Usamos produtos de primeira linha, equipamentos modernos e o principal: cuidamos como se fosse nosso.
+
+Venha nos visitar e faça parte dessa história de confiança, dedicação e alegria. Seu pet merece o melhor, e a gente está aqui pra isso. 💜
+
+</h4>
+    </div>
+
+    <section id="servicos">
+        <section id="banhos">
+            <h2>Banhos</h2>
+            <div class="servicos-container">
+                <div class="servico">
+                    <img src="./IMAGENS/Banho/BanhoComum_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Banho Tradicional</h4>
+                        <p>No Petshop Patas da Alegria, o banho comum é feito com produtos de qualidade e cuidado especial com seu pet.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <img src="./IMAGENS/Banho/BanhoPremium_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Banho Premium</h4>
+                        <p>O banho premium oferece um cuidado ainda mais completo para seu pet.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <img src="./IMAGENS/Banho/BanhoSeco_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Banho a Seco</h4>
+                        <p>Opção rápida e prática para manter seu pet limpinho sem usar água.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tosa">
+            <h2>Tosas</h2>
+            <div class="servicos-container">
+                <div class="servico">
+                    <img src="./IMAGENS/Tosa/TosaHigienica_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Tosa Higiênica</h4>
+                        <p>Feita com cuidado e atenção nas regiões íntimas, patas e barriga.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <img src="./IMAGENS/Tosa/TosanaTesoura_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Tosa na Tesoura</h4>
+                        <p>Acabamento personalizado com muito estilo e conforto.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <img src="./IMAGENS/Tosa/TosaBebe_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Tosa Bebê</h4>
+                        <p>Feita com carinho e paciência, ideal para filhotes.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <img src="./IMAGENS/Tosa/TosaVerao_1.png" alt="">
+                    <div class="info">
+                        <h4>Tosa de Verão</h4>
+                        <p>Perfeita para ajudar seu pet nos dias quentes.</p>
+                    </div>
+                </div>
+                <div class="servico">
+                    <img src="./IMAGENS/Tosa/TosaPadraoRaca_1.jpg" alt="">
+                    <div class="info">
+                        <h4>Tosa Padrão</h4>
+                        <p>Segue as características da raça, mantendo o estilo tradicional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+  
+    <section id="contato" class="contat">
+  <h2>Contato</h2>
+
+  <button id="mostrar-formulario" type="button">Fale Conosco</button>
+
+  <form method="post" action="mailto:vitormortagonery@gmail.com" enctype="text/plain">
+    <fieldset id="escondido" style="display: none;">
+      <legend>Digite Sua Mensagem</legend>
+
+      <label for="txtnome">Nome:</label>
+      <input type="text" name="txtnome" id="txtnome" required>
+
+      <label for="txtemail">Email:</label>
+      <input type="email" name="txtemail" id="txtemail" required>
+
+      <label for="txtdata">Data:</label>
+      <input type="date" name="txtdata" id="txtdata">
+
+      <label for="cxmensagem">Mensagem:</label>
+      <textarea name="mensagem" id="cxmensagem" rows="5"></textarea>
+
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+</section>
+
+
+    <footer>
+        <div class="bloco">
+            <div class="footer-esquerda">
+                <h4 class="paragrafo-redes">Siga nossas redes sociais:</h4>
+                <div class="redes-sociais">
+                    <a href="#"><img src="./IMAGENS/Logos/google_maps.png" alt=""></a>
+                    <a href="#"><img src="./IMAGENS/Logos/instagram (2).png" alt=""></a>
+                    <a href="#"><img src="./IMAGENS/Logos/icons8-whatsapp-50.png" alt=""></a>
+                    <a href="#"><img src="./IMAGENS/Logos/copyright.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //Função Carrosel
+        var contador = 1;
+		var img1="./IMAGENS/Carrosel/Carrosel_1.jpg";
+		var img2="./IMAGENS/Carrosel/Carrosel_2.webp";
+		var img3="./IMAGENS/Carrosel/Carrosel_3.webp";
+		var tempo=1800;
+		var exibir=setInterval("Exibindo()",tempo);
+	  
+		function Exibindo()
+		{
+			document.images["slide"].src=eval("img"+contador);
+			document.getElementById("v"+contador).checked=true;
+				  
+			if (contador<3)
+				contador++;
+			else
+				contador=1;
+		}
+	  
+	  
+	 function Muda(x)
+	 {
+		clearInterval(exibir);
+		contador=x;
+		exibir=setInterval("Exibindo()",tempo);
+	 }
+
+        //funçao Formulário
+        const botao = document.getElementById("mostrar-formulario");
+        const formulario = document.getElementById("escondido");
+        botao.addEventListener("click",function(){
+            formulario.style.display = "block";
+        });
+
+        //menu hamburguer
+            function toggleMenu() {
+        const menu = document.querySelector('.nav-list');
+        menu.classList.toggle('ativo');
+        }
+    </script>
+</body>
+</html>
