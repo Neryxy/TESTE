@@ -139,7 +139,6 @@ section h3 {
   border: 5px solid #464646;
   border-radius: 10px;
   width: 80%;
-  height: 250px;
   margin-left: 10%;
   align-items: center;
   text-align: center;
@@ -369,6 +368,10 @@ button:hover {
   header div img {
     width: 100px;
     height: 100px;
+  }
+  
+  header div h1{
+    font-size: 16px;
   }
 
   /* Carrossel responsivo */
