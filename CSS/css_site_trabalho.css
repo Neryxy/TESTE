@@ -383,7 +383,7 @@ button:hover {
   }
 
   .servico img {
-    max-height: 200px;
+    max-height: 300px;
   }
 
   /* Banho e Tosa imagens menores */
@@ -403,13 +403,12 @@ button:hover {
     flex-direction: column;
     background-color: #fdfdfd;
     position: absolute; /* para ficar sobreposto */
-    top: 60px;
     right: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px;
-    width: 150px;
-    z-index: 1100; /* garantir prioridade na sobreposição */
+    width: 200px;
+    z-index: 2000;
   }
 
   .nav-list.ativo {
